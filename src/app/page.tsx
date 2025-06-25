@@ -1,5 +1,6 @@
 import { Container } from "@/components/atoms/container";
 import { Button } from "@/components/ui/button";
+import { Features } from "@/components/features";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
           </div>
         </section>
       </Container>
+      
+      {/* Features Section */}
+      <Features />
     </div>
   );
 }
