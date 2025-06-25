@@ -3,56 +3,63 @@ import { Button } from "@/components/ui/button";
 
 export function Pricing() {
   return (
-    <section className="py-20 bg-background">
+    <section className="bg-background py-20">
       <Container>
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-4">
-            Pricing
-          </h2>
+        <div className="mb-16 text-center">
+          <h2 className="mb-4 text-4xl md:text-5xl">Pricing</h2>
         </div>
-        
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+        <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
           {/* Free Tier */}
-          <div className="p-8 bg-card rounded-lg border border-border">
-            <div className="text-center mb-6">
-              <h3 className="text-2xl mb-2">Street Corner</h3>
+          <div className="bg-card border-border rounded-lg border p-8">
+            <div className="mb-6 text-center">
+              <h3 className="mb-2 text-2xl">Street Corner</h3>
               <div className="text-3xl font-bold">Free</div>
             </div>
             <div className="mb-6">
-              <p className="text-muted-foreground mb-4">Basic kitchen flow tools</p>
+              <p className="text-muted-foreground mb-4">
+                Basic kitchen flow tools
+              </p>
             </div>
             <Button variant="outline" className="w-full">
               Get Started
             </Button>
           </div>
-          
+
           {/* Pro Tier */}
-          <div className="p-8 bg-primary/5 rounded-lg border-2 border-primary relative">
-            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-              <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
+          <div className="bg-primary/5 border-primary relative rounded-lg border-2 p-8">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 transform">
+              <span className="bg-primary text-primary-foreground rounded-full px-4 py-1 text-sm font-medium">
                 Popular
               </span>
             </div>
-            <div className="text-center mb-6">
-              <h3 className="text-2xl mb-2">Food Truck Hero</h3>
-              <div className="text-3xl font-bold">$49<span className="text-lg font-normal text-muted-foreground">/month</span></div>
+            <div className="mb-6 text-center">
+              <h3 className="mb-2 text-2xl">Food Truck Hero</h3>
+              <div className="text-3xl font-bold">
+                $49
+                <span className="text-muted-foreground text-lg font-normal">
+                  /month
+                </span>
+              </div>
             </div>
             <div className="mb-6">
-              <p className="text-muted-foreground mb-4">Full route optimization + permit tracking</p>
+              <p className="text-muted-foreground mb-4">
+                Full route optimization + permit tracking
+              </p>
             </div>
-            <Button className="w-full">
-              Start Free Trial
-            </Button>
+            <Button className="w-full">Start Free Trial</Button>
           </div>
-          
+
           {/* Enterprise Tier */}
-          <div className="p-8 bg-card rounded-lg border border-border">
-            <div className="text-center mb-6">
-              <h3 className="text-2xl mb-2">Fleet Commander</h3>
+          <div className="bg-card border-border rounded-lg border p-8">
+            <div className="mb-6 text-center">
+              <h3 className="mb-2 text-2xl">Fleet Commander</h3>
               <div className="text-3xl font-bold">Custom</div>
             </div>
             <div className="mb-6">
-              <p className="text-muted-foreground mb-4">Custom pricing for multiple trucks</p>
+              <p className="text-muted-foreground mb-4">
+                Custom pricing for multiple trucks
+              </p>
             </div>
             <Button variant="outline" className="w-full">
               Contact Sales
