@@ -1,28 +1,25 @@
 import { Container } from "@/components/atoms/container";
-import { ExternalLink } from "@/components/atoms/external-link";
-import { DarkModeToggle } from "@/components/atoms/mode-toggle";
-import { ReadmeDisplay } from "@/components/readme-display";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <Container>
-      <div className="grid min-h-screen grid-rows-[auto_1fr_auto] items-center justify-items-center">
-        <header className="container flex h-16 items-center justify-center">
-          <DarkModeToggle className="ml-auto" />
-        </header>
-        <main className="flex flex-col items-center">
-          <ReadmeDisplay />
-        </main>
-        <footer className="flex h-16 flex-wrap items-center justify-center gap-4">
-          <ExternalLink href="https://x.com/holdenmatt">
-            @holdenmatt
-          </ExternalLink>
-          <span className="text-muted-foreground select-none">·</span>
-          <ExternalLink href="https://github.com/holdenmatt">
-            GitHub
-          </ExternalLink>
-        </footer>
-      </div>
-    </Container>
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <Container>
+        <section className="flex min-h-screen items-center justify-center py-20">
+          <div className="text-center max-w-4xl">
+            <h1 className="roadmunch-hero text-foreground mb-6">
+              RoadMunch
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Code your kitchen on wheels with scrappy intelligence
+            </p>
+            <Button size="lg" className="text-lg px-8 py-4 h-auto">
+              Get Started
+            </Button>
+          </div>
+        </section>
+      </Container>
+    </div>
   );
 }
